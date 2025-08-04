@@ -52,7 +52,6 @@ This repo includes several modular scripts to process and structure your data:
 | 4️⃣  | `Data_Negativ_scrapping.py` | Extract "non-jump" frames from raw video         |
 | 5️⃣  | `Data_reducier.py`          | Downsample negatives for class balance           |
 | 6️⃣  | `Data_merge_final.py`       | Merge final positive + negative dataset          |
-| ✅    | `deneme.py`                 | Preview final dataset entries                    |
 
 ---
 
@@ -93,36 +92,32 @@ After running each `.py` script, you can optionally inspect the output `.npz` fi
 ```bash
 # Step 1: Extract positive press–release pairs
 python Data_preproccer.py
-# ✅ Then use the Viewer tool to inspect the generated press–release dataset
-python Data_preproccer.py
+# ✅ Then use the Viewer tool to inspect the generated press–release dataset(Optional)
+
 
 # Step 2: Merge multiple .npz files
 python Data_merge.py
-# ✅ Inspect the merged file using the Viewer
-python Data_merge.py
+# ✅ Inspect the merged file using the Viewer(Optional)
+
 
 # Step 3: Augment positive samples
 python Data_argumentation.py
-# ✅ Open the augmented output in the Viewer to confirm transformations
-python Data_argumentation.py
+# ✅Open the augmented output in the Viewer to confirm transformations(Optional)
+
 
 # Step 4: Extract negative samples from video
 python Data_Negativ_scrapping.py
-# ✅ Check extracted negative samples visually with the Viewer
-python Data_Negativ_scrapping.py
+# ✅ Check extracted negative samples visually with the Viewer(Optional)
+
 
 # Step 5: Reduce excessive negative frames
 python Data_reducier.py
-# ✅ View the reduced dataset for balance verification
-python Data_reducier.py
+# ✅ View the reduced dataset for balance verification(Optional)
+
 
 # Step 6: Merge final dataset
 python Data_merge_final.py
-# ✅ Final sanity check using the Viewer before training
-python Data_merge_final.py
-
-# Optional: Visualize sample entries
-python deneme.py
+# ✅ Final sanity check using the Viewer before training (Optional)
 ```
 
 ---
@@ -150,10 +145,16 @@ This structure ensures that the model can learn *when* and *how long* to jump, b
 
 This project is part of a multi-stage blog series:
 
-* 🧹 Part 1: [Modular Snip Recorder – Data Collection](https://dev.to/ertugrulmutlu/modular-snip-recorder-a-data-collection-tool-for-behavior-cloning-12-5di8)
-* 🧹 Part 2: [Advanced Viewer & Inspector](https://dev.to/ertugrulmutlu/modular-snip-recorder-a-data-collection-tool-for-behavior-cloning-22-1lgl)
-* 🚀 Part 3: *(this repo)* JumpNet Dataset Builder – From Video to Labeled Data
-* 🕒 Part 4: *Coming soon – Model Training & Evaluation*
+*Data Scrapping Tool:
+** 🧹 Part 1: [Modular Snip Recorder – Data Collection](https://dev.to/ertugrulmutlu/modular-snip-recorder-a-data-collection-tool-for-behavior-cloning-12-5di8)
+** 🧹 Part 2: [Advanced Viewer & Inspector](https://dev.to/ertugrulmutlu/modular-snip-recorder-a-data-collection-tool-for-behavior-cloning-22-1lgl)
+
+---
+*Data procces
+** 🚀 Part 1: [Part 1: From Raw Gameplay to Labeled Intelligence — Building the Data Foundation for JumpNet](https://dev.to/ertugrulmutlu/jumpnet-part-1-from-raw-gameplay-to-labeled-intelligence-building-the-data-foundation-for-2e2f)
+** 🚀 Part 2: [Part 2: From Pixels to Policy — Training JumpNet to Make the Right Move](https://dev.to/ertugrulmutlu/jumpnet-part-1-from-raw-gameplay-to-labeled-intelligence-building-the-data-foundation-for-3c49)
+** 🚀 Part 2: [Part 3: Real-Time Inference — Watching JumpNet Come Alive](https://dev.to/ertugrulmutlu/jumpnet-part-3-real-time-inference-watching-jumpnet-come-alive-21b2)
+
 
 ---
 
