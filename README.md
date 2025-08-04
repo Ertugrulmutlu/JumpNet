@@ -13,7 +13,7 @@ JumpNet is documented step-by-step through a 3-part technical blog series:
 ### 🧹 Data Collection Tools
 
 * 📌 [Modular Snip Recorder – Data Collection](https://dev.to/ertugrulmutlu/modular-snip-recorder-a-data-collection-tool-for-behavior-cloning-12-5di8): Learn how to build a modular snipping tool that captures screen frames and keypresses in sync.
-* 📌 [Advanced Viewer & Inspector](https://dev.to/ertugrulmutlu/modular-snip-recorder-a-data-collection-tool-for-behavior-cloning-22-1lgl): A PyQt5-based tool to visually inspect `.npz` datasets after each stage of processing.
+* 📌 [Advanced Viewer & Inspector](https://dev.to/ertugrulmutlu/modular-snip-recorder-a-data-collection-tool-for-behavior-cloning-22-1lgl): A Tkinter-based tool to visually inspect `.npz` datasets after each stage of processing.
 
 ### 🧠 Data Processing & Model Training
 
